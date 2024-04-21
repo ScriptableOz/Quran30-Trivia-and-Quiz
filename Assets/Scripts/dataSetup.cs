@@ -24,6 +24,7 @@ public class dataSaver : MonoBehaviour
             PlayerPrefs.SetInt("currentExp", 1);
             PlayerPrefs.SetInt("currentMaxExp", 50);
 
+            PlayerPrefs.SetInt("choosenTheme", 1);
 
             // Mark as initialized
             PlayerPrefs.SetInt("Initialized", 1);

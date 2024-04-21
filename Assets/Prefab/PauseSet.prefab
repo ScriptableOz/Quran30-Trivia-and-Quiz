@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 7947197147419867088}
   m_Layer: 5
   m_Name: pauseMenu
-  m_TagString: Untagged
+  m_TagString: SetSecondaryColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 7018023168462878477}
   m_Layer: 5
   m_Name: pauseBtn
-  m_TagString: Untagged
+  m_TagString: SetSecondaryColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -648,7 +648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907533135266168406, guid: 6cc40368c69396949b1a8b48e18fd4b5, type: 3}
       propertyPath: m_fontSize
-      value: 18
+      value: 17.7
       objectReference: {fileID: 0}
     - target: {fileID: 7907533135266168406, guid: 6cc40368c69396949b1a8b48e18fd4b5, type: 3}
       propertyPath: m_fontSizeMax

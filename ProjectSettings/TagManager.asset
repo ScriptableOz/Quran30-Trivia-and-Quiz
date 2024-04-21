@@ -6,6 +6,8 @@ TagManager:
   tags:
   - SetPrimaryColor
   - SetSecondaryColor
+  - SetTertiaryColor
+  - SetQuarternaryColor
   layers:
   - Default
   - TransparentFX
