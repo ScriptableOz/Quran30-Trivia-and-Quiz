@@ -16,6 +16,8 @@ public class ThemeManager : MonoBehaviour
     private Color textColor2;
     private Color textColor3;
     private Color textColor4;
+    private Color textColor5;
+    private Color textColor6;
 
 
     GameObject[] primaryTheme;
@@ -27,6 +29,8 @@ public class ThemeManager : MonoBehaviour
     GameObject[] textColor2Theme;
     GameObject[] textColor3Theme;
     GameObject[] textColor4Theme;
+    GameObject[] textColor5Theme;
+    GameObject[] textColor6Theme;
 
     private void Start()
     {
@@ -63,7 +67,7 @@ public class ThemeManager : MonoBehaviour
             case 3:
                 ColorUtility.TryParseHtmlString("#0E1C3E", out primaryColor);//Navy Blue
                 ColorUtility.TryParseHtmlString("#65C9D7", out secondaryColor);//Neon Blue
-                ColorUtility.TryParseHtmlString("#FFFFFF", out tertiaryColor);//White
+                ColorUtility.TryParseHtmlString("#231F20", out tertiaryColor);//Black
                 ColorUtility.TryParseHtmlString("#231F20", out quarternaryColor);//Black
 
                 ColorUtility.TryParseHtmlString("#231F20", out textColor1);//Black
