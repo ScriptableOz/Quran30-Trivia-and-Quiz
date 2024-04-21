@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5983913850359469098}
   m_Layer: 5
   m_Name: sceneBtn
-  m_TagString: Untagged
+  m_TagString: SetSecondaryColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,7 +146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af05a0df5b4542b4d8d7e17aa758a577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionSetup: {fileID: 0}
 --- !u!1 &4382608051352547260
 GameObject:
   m_ObjectHideFlags: 0
