@@ -8,31 +8,47 @@ public class ThemeManager : MonoBehaviour
 {
     private Color primaryColor;
     private Color secondaryColor;
+    private Color tertiaryColor;
+    private Color quarternaryColor;
 
     GameObject[] primaryTheme;
     GameObject[] secondaryTheme;
+    GameObject[] tertiaryTheme;
+    GameObject[] quarternaryTheme;
 
+    private void Start()
+    {
+        ChangeTheme(PlayerPrefs.GetInt("choosenTheme"));
+    }
     public void ChangeTheme(int themeSet)
     {
-        print("tapped");
+        PlayerPrefs.SetInt("choosenTheme", themeSet);
 
         switch (themeSet)
         {
             case 1:
-                ColorUtility.TryParseHtmlString("#68C9FF", out primaryColor);
-                ColorUtility.TryParseHtmlString("#FFFFFF", out secondaryColor);
+                ColorUtility.TryParseHtmlString("#68C9FF", out primaryColor);//Light Blue
+                ColorUtility.TryParseHtmlString("#FFFFFF", out secondaryColor);//White
+                ColorUtility.TryParseHtmlString("#231F20", out tertiaryColor);//Black
+                ColorUtility.TryParseHtmlString("#231F20", out quarternaryColor);//Black
                 break;
             case 2:
-                ColorUtility.TryParseHtmlString("#b49fcc", out primaryColor);
-                ColorUtility.TryParseHtmlString("#6d466b", out secondaryColor);
+                ColorUtility.TryParseHtmlString("#D1BCDB", out primaryColor); //Light Purple
+                ColorUtility.TryParseHtmlString("#6D57A5", out secondaryColor); //Purple
+                ColorUtility.TryParseHtmlString("#47366D", out tertiaryColor); //Darker Purple
+                ColorUtility.TryParseHtmlString("#FFFFFF", out quarternaryColor); //White
                 break;
             case 3:
-                ColorUtility.TryParseHtmlString("#22162B", out primaryColor);
-                ColorUtility.TryParseHtmlString("#57C4E5", out secondaryColor);
+                ColorUtility.TryParseHtmlString("#0E1C3E", out primaryColor);//Navy Blue
+                ColorUtility.TryParseHtmlString("#65C9D7", out secondaryColor);//Neon Blue
+                ColorUtility.TryParseHtmlString("#FFFFFF", out tertiaryColor);//White
+                ColorUtility.TryParseHtmlString("#231F20", out quarternaryColor);//Black
                 break;
             default:
-                ColorUtility.TryParseHtmlString("#68C9FF", out primaryColor);
-                ColorUtility.TryParseHtmlString("#FFFFFF", out secondaryColor);
+                ColorUtility.TryParseHtmlString("#68C9FF", out primaryColor);//Light Blue
+                ColorUtility.TryParseHtmlString("#FFFFFF", out secondaryColor);//White
+                ColorUtility.TryParseHtmlString("#231F20", out tertiaryColor);//Black
+                ColorUtility.TryParseHtmlString("#231F20", out quarternaryColor);//Black
                 break;
         }
 
@@ -54,6 +70,24 @@ public class ThemeManager : MonoBehaviour
             if (Image != null)
             {
                 Image.color = secondaryColor;
+            }
+        }
+
+        foreach (GameObject obj in tertiaryTheme)
+        {
+            Image Image = obj.GetComponent<Image>();
+            if (Image != null)
+            {
+                Image.color = tertiaryColor;
+            }
+        }
+
+        foreach (GameObject obj in quarternaryTheme)
+        {
+            Image Image = obj.GetComponent<Image>();
+            if (Image != null)
+            {
+                Image.color = quarternaryColor;
             }
         }
 
