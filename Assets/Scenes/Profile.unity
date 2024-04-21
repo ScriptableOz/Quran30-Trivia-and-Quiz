@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 76589222}
   m_Layer: 5
   m_Name: Deeds
-  m_TagString: Untagged
+  m_TagString: SetTextColor2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1006,7 +1006,7 @@ GameObject:
   - component: {fileID: 235227574}
   m_Layer: 5
   m_Name: USERNAME
-  m_TagString: Untagged
+  m_TagString: SetTextColor2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1342,7 +1342,7 @@ GameObject:
   - component: {fileID: 351286559}
   m_Layer: 5
   m_Name: Rank
-  m_TagString: Untagged
+  m_TagString: SetTextColor2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1517,7 +1517,7 @@ GameObject:
   - component: {fileID: 354704039}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_TagString: SetTextColor2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1819,7 +1819,7 @@ GameObject:
   - component: {fileID: 545737133}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_TagString: SetTextColor2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

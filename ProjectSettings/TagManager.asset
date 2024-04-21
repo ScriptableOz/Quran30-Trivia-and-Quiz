@@ -10,6 +10,8 @@ TagManager:
   - SetQuarternaryColor
   - SetTextColor1
   - SetTextColor2
+  - SetTextColor3
+  - SetTextColor4
   layers:
   - Default
   - TransparentFX
