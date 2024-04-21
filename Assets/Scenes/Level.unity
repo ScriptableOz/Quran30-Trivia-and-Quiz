@@ -2735,7 +2735,7 @@ GameObject:
   - component: {fileID: 7828923404279937278}
   m_Layer: 5
   m_Name: 'Level:'
-  m_TagString: SetTextColor1
+  m_TagString: SetTextColor2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2799,7 +2799,7 @@ GameObject:
   - component: {fileID: 682403683351258027}
   m_Layer: 5
   m_Name: expPoints
-  m_TagString: SetTextColor1
+  m_TagString: SetTextColor2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2817,7 +2817,7 @@ GameObject:
   - component: {fileID: 8532003681605782736}
   m_Layer: 5
   m_Name: 0
-  m_TagString: SetTextColor1
+  m_TagString: SetTextColor2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

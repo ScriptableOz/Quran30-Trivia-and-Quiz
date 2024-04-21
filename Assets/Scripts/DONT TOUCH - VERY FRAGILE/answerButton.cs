@@ -73,8 +73,6 @@ public class answerButton : MonoBehaviour
             PlayerPrefs.SetFloat("Scores_" + i, Mathf.Round(rightScores * 100f) / 100f);
             // Change the button's color to green
             StartCoroutine(turnGreen());
-
-            PlayerPrefs.SetInt("currentExp", PlayerPrefs.GetInt("currentExp") + 3);
         }
 
         else
@@ -87,8 +85,6 @@ public class answerButton : MonoBehaviour
 
             // Change the button's color to red
             StartCoroutine(turnRed());
-
-            PlayerPrefs.SetInt("currentExp", PlayerPrefs.GetInt("currentExp") + 1);
         }
 
         if (questionSetup.questions.Count > 0) // Changed the condition here
@@ -107,6 +103,7 @@ public class answerButton : MonoBehaviour
         buttonComponent.image.color = correctColor;
         yield return new WaitForSeconds(0.75f);
         buttonComponent.image.color = defaultColor;
+        PlayerPrefs.SetInt("currentExp", PlayerPrefs.GetInt("currentExp") + 3);
     }
 
     IEnumerator turnRed()
@@ -114,6 +111,7 @@ public class answerButton : MonoBehaviour
         buttonComponent.image.color = wrongColor;
         yield return new WaitForSeconds(0.75f);
         buttonComponent.image.color = defaultColor;
+        PlayerPrefs.SetInt("currentExp", PlayerPrefs.GetInt("currentExp") + 1);
     }
 
     IEnumerator reload()

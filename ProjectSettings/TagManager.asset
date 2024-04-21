@@ -12,6 +12,8 @@ TagManager:
   - SetTextColor2
   - SetTextColor3
   - SetTextColor4
+  - SetTextColor5
+  - SetTextColor6
   layers:
   - Default
   - TransparentFX
