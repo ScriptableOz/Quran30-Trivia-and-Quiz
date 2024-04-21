@@ -12,7 +12,7 @@ public class pauseHandler : MonoBehaviour
 
     private void Start()
     {
-        isPaused = false;
+        StartCoroutine(autoHide());
     }
     public void pauseToggle()
     {
@@ -43,6 +43,13 @@ public class pauseHandler : MonoBehaviour
     public void buttonUnpausedScene()
     {
         Time.timeScale = 1.0f;
+    }
+
+    IEnumerator autoHide()
+    {
+        yield return new WaitForSeconds(0.01f);
+        pausePanel.SetActive(false);
+        isPaused = false;
     }
 
 }
