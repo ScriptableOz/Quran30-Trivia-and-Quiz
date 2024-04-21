@@ -17,7 +17,9 @@ public class levelButton : MonoBehaviour
     public bool isShow = false;
     private void Start()
     {
-        StartCoroutine(autoHide());
+        buttonText.text = surahName;
+        description.SetActive(false);
+        isShow = false;
     }
 
     public void interactButton(string sceneName)
@@ -60,14 +62,6 @@ public class levelButton : MonoBehaviour
 
     public void hideDesc()
     {
-        description.SetActive(false);
-        isShow = false;
-    }
-
-    IEnumerator autoHide()
-    {
-        yield return new WaitForSeconds(0.01f);
-        buttonText.text = surahName;
         description.SetActive(false);
         isShow = false;
     }

@@ -8,8 +8,6 @@ TagManager:
   - SetSecondaryColor
   - SetTertiaryColor
   - SetQuarternaryColor
-  - SetTextColor1
-  - SetTextColor2
   layers:
   - Default
   - TransparentFX
