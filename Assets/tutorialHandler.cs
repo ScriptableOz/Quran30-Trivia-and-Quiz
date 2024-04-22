@@ -2,26 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class tutorialHandler : MonoBehaviour
 {
     public GameObject tutorMenu;
+    public GameObject tutorialBG;
     public GameObject[] tutorialPanels;
     private int currentPanelIndex = 0;
 
     private void Awake()
     {
-        // Check if the panel has been loaded before
-        if (!PlayerPrefs.HasKey("PanelLoadedKey"))
+        if (PlayerPrefs.GetInt("hasSkip")!= 1)
         {
-            // If not loaded before, activate the panel and set the flag
-            tutorMenu.SetActive(true);
-            PlayerPrefs.SetInt("PanelLoadedKey", 1);
+            Debug.Log("Has not skipped");
         }
         else
         {
-            // If already loaded before, deactivate the panel
             tutorMenu.SetActive(false);
+            tutorialBG.SetActive(false);
         }
     }
 
@@ -56,12 +55,20 @@ public class tutorialHandler : MonoBehaviour
         if (currentPanelIndex >= tutorialPanels.Length)
         {
             tutorMenu.SetActive(false);
+            tutorialBG.SetActive(false);
+            SceneManager.LoadScene("Play");
+            if (SceneManager.GetActiveScene().name == "Play")
+            {
+                PlayerPrefs.SetInt("hasSkip", 1);
+            }
         }
     }
 
     public void OnSkipButtonClick()
     {
         tutorMenu.SetActive(false);
+        tutorialBG.SetActive(false);
+        PlayerPrefs.SetInt("hasSkip", 1);
     }
 
 }

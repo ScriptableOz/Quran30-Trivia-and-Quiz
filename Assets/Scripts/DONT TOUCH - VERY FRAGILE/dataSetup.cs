@@ -26,11 +26,14 @@ public class dataSaver : MonoBehaviour
 
             PlayerPrefs.SetInt("choosenTheme", 1);
 
+            PlayerPrefs.SetInt("hasSkip", 0);
+
             // Mark as initialized
             PlayerPrefs.SetInt("Initialized", 1);
 
             // Save the changes
             PlayerPrefs.Save();
+
 
             Debug.Log("Player preferences initialized.");
         }
