@@ -7260,7 +7260,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6cfaa2a2f59ac84bbf6b7379432f97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Panel
 --- !u!1001 &1400577683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10195,7 +10194,7 @@ GameObject:
   - component: {fileID: 1967933089}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_TagString: SetTextColor1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11215,6 +11214,10 @@ PrefabInstance:
     - target: {fileID: 6403748273973117746, guid: ea257733493714941b0bcd6c78a7c747, type: 3}
       propertyPath: m_Name
       value: deedDisplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989343129472207434, guid: ea257733493714941b0bcd6c78a7c747, type: 3}
+      propertyPath: m_TagString
+      value: SetTextColor1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

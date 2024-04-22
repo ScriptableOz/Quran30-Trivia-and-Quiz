@@ -8803,7 +8803,7 @@ GameObject:
   - component: {fileID: 1457580186}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: SetTextColor2
+  m_TagString: SetTextColor1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9375,7 +9375,7 @@ GameObject:
   - component: {fileID: 1644818445}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: SetTextColor2
+  m_TagString: SetTextColor1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10708,7 +10708,7 @@ GameObject:
   - component: {fileID: 2043104536}
   m_Layer: 5
   m_Name: Title
-  m_TagString: SetTextColor2
+  m_TagString: SetTextColor1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
