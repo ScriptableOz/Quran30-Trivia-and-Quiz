@@ -52,8 +52,8 @@ public class Panel : MonoBehaviour
             }
 
             // Reload the current scene
-           // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-           // return;//
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            // return;//
         }
 
         // Activate the next image
