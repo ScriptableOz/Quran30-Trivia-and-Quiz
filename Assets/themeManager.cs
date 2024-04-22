@@ -77,11 +77,11 @@ public class ThemeManager : MonoBehaviour
                 break;
             case 4:
                 ColorUtility.TryParseHtmlString("#86BA90", out primaryColor);//Green
-                ColorUtility.TryParseHtmlString("#F5F3BB", out secondaryColor);//Light Yellow
+                ColorUtility.TryParseHtmlString("#DFA06E", out secondaryColor);//Light Yellow
                 ColorUtility.TryParseHtmlString("#231F20", out tertiaryColor);//Black
                 ColorUtility.TryParseHtmlString("#231F20", out quarternaryColor);//Black
 
-                ColorUtility.TryParseHtmlString("#231F20", out textColor1);//Black
+                ColorUtility.TryParseHtmlString("#FFFFFF", out textColor1);//White
                 ColorUtility.TryParseHtmlString("#FFFFFF", out textColor2);//White
                 ColorUtility.TryParseHtmlString("#231F20", out textColor3);//Black
                 ColorUtility.TryParseHtmlString("#FFFFFF", out textColor4);//White

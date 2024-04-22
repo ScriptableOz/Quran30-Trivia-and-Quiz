@@ -69,6 +69,7 @@ public class tutorialHandler : MonoBehaviour
         tutorMenu.SetActive(false);
         tutorialBG.SetActive(false);
         PlayerPrefs.SetInt("hasSkip", 1);
+        SceneManager.LoadScene("MainMenu");
     }
 
 }
