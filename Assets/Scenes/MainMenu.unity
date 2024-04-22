@@ -630,7 +630,7 @@ GameObject:
   - component: {fileID: 493425649}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: SetTextColor2
+  m_TagString: SetTextColor1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3610,7 +3610,7 @@ GameObject:
   - component: {fileID: 8159594485068920515}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: SetTextColor2
+  m_TagString: SetTextColor1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3855,6 +3855,10 @@ PrefabInstance:
     - target: {fileID: 8508723640993877652, guid: baf46118766161f419278687786734da, type: 3}
       propertyPath: m_Name
       value: Line
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508723640993877652, guid: baf46118766161f419278687786734da, type: 3}
+      propertyPath: m_TagString
+      value: SetSecondaryColor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

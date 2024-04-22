@@ -48,8 +48,8 @@ public class ThemeManager : MonoBehaviour
                 ColorUtility.TryParseHtmlString("#231F20", out tertiaryColor);//Black
                 ColorUtility.TryParseHtmlString("#231F20", out quarternaryColor);//Black
 
-                ColorUtility.TryParseHtmlString("#FFFFFF", out textColor1);//White
-                ColorUtility.TryParseHtmlString("#231F20", out textColor2);//Black
+                ColorUtility.TryParseHtmlString("#231F20", out textColor1);//Black
+                ColorUtility.TryParseHtmlString("#FFFFFF", out textColor2);//White
                 ColorUtility.TryParseHtmlString("#231F20", out textColor3);//Black
                 ColorUtility.TryParseHtmlString("#FFFFFF", out textColor4);//White
                 break;
@@ -59,7 +59,7 @@ public class ThemeManager : MonoBehaviour
                 ColorUtility.TryParseHtmlString("#47366D", out tertiaryColor); //Darker Purple
                 ColorUtility.TryParseHtmlString("#FFFFFF", out quarternaryColor); //White
 
-                ColorUtility.TryParseHtmlString("#231F20", out textColor1);//Black
+                ColorUtility.TryParseHtmlString("#FFFFFF", out textColor1);//White
                 ColorUtility.TryParseHtmlString("#FFFFFF", out textColor2);//White
                 ColorUtility.TryParseHtmlString("#231F20", out textColor3);//Black
                 ColorUtility.TryParseHtmlString("#FFFFFF", out textColor4);//White
@@ -70,7 +70,7 @@ public class ThemeManager : MonoBehaviour
                 ColorUtility.TryParseHtmlString("#231F20", out tertiaryColor);//Black
                 ColorUtility.TryParseHtmlString("#231F20", out quarternaryColor);//Black
 
-                ColorUtility.TryParseHtmlString("#231F20", out textColor1);//Black
+                ColorUtility.TryParseHtmlString("#FFFFFF", out textColor1);//White
                 ColorUtility.TryParseHtmlString("#FFFFFF", out textColor2);//White
                 ColorUtility.TryParseHtmlString("#231F20", out textColor3);//Black
                 ColorUtility.TryParseHtmlString("#FFFFFF", out textColor4);//White
