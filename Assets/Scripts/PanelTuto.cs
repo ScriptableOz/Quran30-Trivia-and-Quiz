@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Panel : MonoBehaviour
+public class PanelTuto : MonoBehaviour
 {
     public GameObject[] images;      // Array to hold your image GameObjects
     public Button nextButton;        // Reference to the Next button
@@ -52,8 +52,8 @@ public class Panel : MonoBehaviour
             }
 
             // Reload the current scene
-           // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-           // return;//
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            // return;//
         }
 
         // Activate the next image
