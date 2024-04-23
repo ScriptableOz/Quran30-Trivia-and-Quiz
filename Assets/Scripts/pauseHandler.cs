@@ -36,13 +36,7 @@ public class pauseHandler : MonoBehaviour
 
     void unPaused()
     {
-        Time.timeScale = 1.0f;
         pausePanel.SetActive(false);
-    }
-
-    public void buttonUnpausedScene()
-    {
-        Time.timeScale = 1.0f;
     }
 
     IEnumerator autoHide()

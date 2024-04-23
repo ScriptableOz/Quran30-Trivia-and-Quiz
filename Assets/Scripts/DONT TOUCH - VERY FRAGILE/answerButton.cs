@@ -6,6 +6,8 @@ using TMPro;
 
 public class answerButton : MonoBehaviour
 {
+    public GameObject doublePanel;
+
     private bool isCorrect;
     private TextMeshProUGUI answerText;
     private Button buttonComponent;
@@ -19,6 +21,15 @@ public class answerButton : MonoBehaviour
 
     [SerializeField]
     private int score;
+
+    private float rightDeeds;
+    private float rightScores;
+
+    private float wrongDeeds;
+    private float wrongScores;
+
+    // Variables related to power-up
+    private bool powerUpActivated = false; // Indicate if the power-up is activated for this question
 
     private float rightDeedMulti = 0.5f;
     private float wrongDeedMulti = 0.05f;
@@ -46,7 +57,6 @@ public class answerButton : MonoBehaviour
         {
             Debug.LogError("timeController not found in the scene!");
         }
-
     }
 
     public void SetAnswerText(string newText)
@@ -62,23 +72,32 @@ public class answerButton : MonoBehaviour
     public void onClick()
     {
         int i = questionSetup.counter;
+        doublePanel.SetActive(false);
 
         if (isCorrect)
         {
             // Calculate deeds and scores for the current question
-            float rightDeeds = PlayerPrefs.GetFloat("Timer") * 0.5f;
-            float rightScores = PlayerPrefs.GetFloat("Timer") * 0.5f;
+            rightDeeds = PlayerPrefs.GetFloat("Timer") * 0.5f;
+            rightScores = PlayerPrefs.GetFloat("Timer") * 0.5f;
+
             // Save deeds and scores for the current question
             PlayerPrefs.SetFloat("Deeds_" + i, Mathf.Round(rightDeeds * 100f) / 100f);
             PlayerPrefs.SetFloat("Scores_" + i, Mathf.Round(rightScores * 100f) / 100f);
+
+            // Check if the power-up is activated and apply it only once per question
+            if (powerUpActivated)
+            {
+                DoubleDeeds();
+                powerUpActivated = false; // Reset the power-up activation
+            }
+
             // Change the button's color to green
             StartCoroutine(turnGreen());
         }
-
         else
         {
-            float wrongDeeds = PlayerPrefs.GetFloat("Timer") * 0.05f;
-            float wrongScores = (11f - PlayerPrefs.GetFloat("Timer")) * -0.75f;
+            wrongDeeds = PlayerPrefs.GetFloat("Timer") * 0.05f;
+            wrongScores = (11f - PlayerPrefs.GetFloat("Timer")) * -0.75f;
             // Save deeds and scores for the current question
             PlayerPrefs.SetFloat("Deeds_" + i, Mathf.Round(wrongDeeds * 100f) / 100f);
             PlayerPrefs.SetFloat("Scores_" + i, Mathf.Round(wrongScores * 100f) / 100f);
@@ -96,6 +115,24 @@ public class answerButton : MonoBehaviour
             // If there is only one question left, change the scene
             StartCoroutine(resultPage(1));
         }
+    }
+
+    public void ActivatePowerUp()
+    {
+        // Set the power-up as activated for this question
+        powerUpActivated = true;
+    }
+
+    // Method to double the deeds
+    public void DoubleDeeds()
+    {
+        int i = questionSetup.counter;
+
+        // Double the deeds
+        rightDeeds *= 2;
+
+        // Save the doubled deeds for the current question
+        PlayerPrefs.SetFloat("Deeds_" + i, Mathf.Round(rightDeeds * 100f) / 100f);
     }
 
     IEnumerator turnGreen()
@@ -126,5 +163,4 @@ public class answerButton : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         SceneManager.LoadScene("Result");
     }
-
 }
