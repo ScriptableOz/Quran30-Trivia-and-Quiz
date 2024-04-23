@@ -17,7 +17,6 @@ public class dataSaver : MonoBehaviour
             PlayerPrefs.SetString("Profile Name", "Guest");
             PlayerPrefs.SetString("Level Type", "QuizSurahSelect");
             PlayerPrefs.SetFloat("Countdown", 0);
-            PlayerPrefs.SetFloat("deedTemp", 0);
             PlayerPrefs.SetFloat("scoreTemp", 0);
 
             PlayerPrefs.SetInt("playerLevel", 0);
