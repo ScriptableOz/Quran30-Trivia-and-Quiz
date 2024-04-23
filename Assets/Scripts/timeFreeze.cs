@@ -16,7 +16,15 @@ public class TimeFreeze : MonoBehaviour
     }
     public void FreezeTimer(float setTimer)
     {
-        StartCoroutine(FreezeForAMoment(setTimer));
+        if (PlayerPrefs.GetFloat("Premium") > 9)
+        {
+            PlayerPrefs.SetFloat("Premium", PlayerPrefs.GetFloat("Premium") - 10);
+            StartCoroutine(FreezeForAMoment(setTimer));
+        }
+        else
+        {
+            print("No Money");
+        }
     }
 
     IEnumerator FreezeForAMoment(float seconds)

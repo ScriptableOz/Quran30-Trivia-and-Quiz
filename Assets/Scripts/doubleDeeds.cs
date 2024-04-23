@@ -3,7 +3,20 @@ using UnityEngine;
 public class doubleDeeds : MonoBehaviour
 {
     public GameObject doublePanel;
+
     public void onClick()
+    {
+        if (PlayerPrefs.GetFloat("Premium") > 9)
+        {
+            PlayerPrefs.SetFloat("Premium", PlayerPrefs.GetFloat("Premium") - 10);
+            activateDouble();
+        }
+        else
+        {
+            print("No Money");
+        }
+    }
+    public void activateDouble()
     {
         doublePanel.SetActive(true);
 

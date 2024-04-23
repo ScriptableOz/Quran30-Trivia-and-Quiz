@@ -22,6 +22,7 @@ public class DevBtn : MonoBehaviour
             devMode = true;
             StartCoroutine(showPanel());
             PlayerPrefs.SetFloat("Deeds", 9999);
+            PlayerPrefs.SetFloat("Premium", 9999);
 
         }
 

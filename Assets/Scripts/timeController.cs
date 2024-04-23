@@ -9,6 +9,8 @@ using System;
 
 public class timeController : MonoBehaviour
 {
+    public GameObject doublePanel;
+
     private questionSetup questionSetup;
 
     [SerializeField]
@@ -67,6 +69,7 @@ public class timeController : MonoBehaviour
                 {
                     questionSetup.Start();
                     Start();
+                    doublePanel.SetActive(false);
                     Debug.Log("RAN OUT OF TIME");
                 }
 

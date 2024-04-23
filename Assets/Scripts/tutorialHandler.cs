@@ -60,6 +60,7 @@ public class tutorialHandler : MonoBehaviour
             if (SceneManager.GetActiveScene().name == "Play")
             {
                 PlayerPrefs.SetInt("hasSkip", 1);
+                SceneManager.LoadScene("MainMenu");
             }
         }
     }
