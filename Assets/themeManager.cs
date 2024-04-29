@@ -183,7 +183,9 @@ public class ThemeManager : MonoBehaviour
             }
         }
 
+      
 
         Debug.Log("Change Theme Success!");
     }
+
 }
