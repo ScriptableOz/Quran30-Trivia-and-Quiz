@@ -5,21 +5,17 @@ public class ThemeButton : MonoBehaviour
 {
     public Outline outline;
     public Button button;
-    public bool isDefaultButton = false; 
+    public bool isDefaultButton = false;
 
     void Start()
     {
-        
         outline = GetComponent<Outline>();
-
-       
         button = GetComponent<Button>();
 
-        
         button.onClick.AddListener(OnClickButton);
 
-        
-        if (isDefaultButton)
+        // Enable outline based on whether this is the default or selected theme button
+        if (isDefaultButton || PlayerPrefs.HasKey("SelectedThemeButton") && PlayerPrefs.GetString("SelectedThemeButton") == gameObject.name)
         {
             EnableOutline();
         }
@@ -31,7 +27,10 @@ public class ThemeButton : MonoBehaviour
 
     void OnClickButton()
     {
-        // Enable the outline when the button is clicked
+        // Save the selected theme button
+        PlayerPrefs.SetString("SelectedThemeButton", gameObject.name);
+
+        // Enable the outline 
         EnableOutline();
 
         // Disable the outline for other buttons
@@ -56,12 +55,10 @@ public class ThemeButton : MonoBehaviour
 
     void DisableOutlineForOtherButtons()
     {
-        
         ThemeButton[] themeButtons = FindObjectsOfType<ThemeButton>();
 
         foreach (ThemeButton otherButton in themeButtons)
         {
-            
             if (otherButton == this)
                 continue;
 
