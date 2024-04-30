@@ -735,15 +735,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4048831622320767097, guid: b520ff3a731ccc9438a209a9d460c56e, type: 3}
       propertyPath: m_EffectColor.b
-      value: 0.41960788
+      value: 0.8980393
       objectReference: {fileID: 0}
     - target: {fileID: 4048831622320767097, guid: b520ff3a731ccc9438a209a9d460c56e, type: 3}
       propertyPath: m_EffectColor.g
-      value: 0.27450982
+      value: 0.7686275
       objectReference: {fileID: 0}
     - target: {fileID: 4048831622320767097, guid: b520ff3a731ccc9438a209a9d460c56e, type: 3}
       propertyPath: m_EffectColor.r
-      value: 0.427451
+      value: 0.34117648
       objectReference: {fileID: 0}
     - target: {fileID: 6816486371235960570, guid: b520ff3a731ccc9438a209a9d460c56e, type: 3}
       propertyPath: m_Pivot.x
@@ -1490,15 +1490,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4048831622320767097, guid: b520ff3a731ccc9438a209a9d460c56e, type: 3}
       propertyPath: m_EffectColor.b
-      value: 0.41960788
+      value: 0.73333335
       objectReference: {fileID: 0}
     - target: {fileID: 4048831622320767097, guid: b520ff3a731ccc9438a209a9d460c56e, type: 3}
       propertyPath: m_EffectColor.g
-      value: 0.27450982
+      value: 0.95294124
       objectReference: {fileID: 0}
     - target: {fileID: 4048831622320767097, guid: b520ff3a731ccc9438a209a9d460c56e, type: 3}
       propertyPath: m_EffectColor.r
-      value: 0.427451
+      value: 0.9607844
       objectReference: {fileID: 0}
     - target: {fileID: 6816486371235960570, guid: b520ff3a731ccc9438a209a9d460c56e, type: 3}
       propertyPath: m_Pivot.x
@@ -4509,15 +4509,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4048831622320767097, guid: b520ff3a731ccc9438a209a9d460c56e, type: 3}
       propertyPath: m_EffectColor.b
-      value: 0.41960788
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4048831622320767097, guid: b520ff3a731ccc9438a209a9d460c56e, type: 3}
       propertyPath: m_EffectColor.g
-      value: 0.27450982
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4048831622320767097, guid: b520ff3a731ccc9438a209a9d460c56e, type: 3}
       propertyPath: m_EffectColor.r
-      value: 0.427451
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6816486371235960570, guid: b520ff3a731ccc9438a209a9d460c56e, type: 3}
       propertyPath: m_Pivot.x
